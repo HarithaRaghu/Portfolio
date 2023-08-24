@@ -1,0 +1,97 @@
+.text-zone{
+    padding: 120px;
+    background-color: rgb(24, 24, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        font-family: 'Helvetica neu';
+        font-weight: bolder;
+        font-size: 60px;
+        margin-left: 300px;
+        padding: 50px;
+
+        
+        .animated-text{
+            
+            color: rgb(193, 129, 26);
+            
+            }
+        p{
+            font-size: 16px;
+        }
+        button{
+            margin-left: 100px;
+            font-size: 10px;
+            font-weight: bold;
+            color: rgb(13, 72, 86) ;
+            background-color: #9bb7bd;
+            padding: 5px 30px;
+            border:1px solid rgb(13, 72, 86) ;
+            transition: 0.3s ease;
+            &:hover{
+                background-color: rgb(96, 146, 159);
+                color: #ffff;
+            }
+        }
+
+    }
+    .techstack-img {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // position: relative;
+      
+        .html{
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            margin-right: 20px; 
+            
+             
+        }
+        .css{
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            
+        }
+        .js{
+            width: 130px;
+            height: 90px;
+            top: 200px;
+        }
+    }
+      
+   
+}
+@media(max-width:768px){
+    .text-zone{
+        padding: 40px;
+        flex-direction: column;
+        h1{
+            font-size: 40px;
+            margin-left: 0;
+            padding: 10px;
+
+           
+            
+        }
+    .sparkle-1{
+        display: none;
+    }
+        .techstack-img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        
+        .html,.css,.js{
+                 width: 80px;
+                 height: 80px;
+                 top: 0;
+                 margin: 5px;
+        }
+    }
+    }
+}

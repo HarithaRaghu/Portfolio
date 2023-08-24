@@ -1,0 +1,19 @@
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    padding: 50px 8vw 30px;
+    flex-direction: column;
+    background-color: rgb(175, 170, 170);
+
+    .icons{
+        
+        font-size: 25px;
+        a{
+            padding: 5px;
+        }
+    }
+
+}
+

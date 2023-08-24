@@ -1,0 +1,75 @@
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../../assets/images/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    background-color:  grey;
+    .heading{
+         color:  rgb(175, 170, 170);
+         margin-left: 27px;
+    }
+    .about-content{
+        width: 850px;
+        height: 400px;
+        margin-left: 20px;
+        border-left: 3px solid #fff777;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.6);
+
+      
+      .profile-image {
+        padding: 40px;
+        width: 200px;
+        height: auto;
+        opacity: 0.9;
+        border-radius: 50%;
+        float: left;
+        overflow: hidden;
+      }
+    
+        p{   
+          padding: 50px;
+          font-size: 18px;
+          color:  #ffff;
+            
+        }
+  .icons{
+         position: absolute;
+         margin-left: 650px;
+         margin-top: -60px;
+         font-size: 30px;
+          
+          
+            a{
+              padding: 5px;
+
+            }
+        
+       }
+    }
+  
+   
+  }
+
+  @media (max-width: 768px) {
+    .about-container {
+        padding: 20px;
+    
+
+    .about-content {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+
+        .icons {
+            position: absolute;
+            margin-top: -50px;
+            margin-left: 200px;
+             
+        }
+    }
+}
+  }
