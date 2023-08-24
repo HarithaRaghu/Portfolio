@@ -2,7 +2,7 @@
 .about-container {
     display: flex;
     flex-direction: column;
-    background-image: url(../../assets/images/about.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../assets/images/about.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 100px;
