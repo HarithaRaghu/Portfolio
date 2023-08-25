@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import './index.scss'
+import axios from 'axios';
 
 const Contact =()=>{
 
@@ -21,12 +22,31 @@ const Contact =()=>{
           
           )
       }
-      const handleSubmit=(e)=>{
+      const handleSubmit = async(e)=>{
         e.preventDefault(e);
-        const { name, email, message } = formData;
-        console.log('Name:', name);
-        console.log('Email:', email);
-        console.log('Message:', message);
+        // const { name, email, message } = formData;
+        // console.log('Name:', name);
+        // console.log('Email:', email);
+        // console.log('Message:', message);
+        try {
+
+          await axios.post('http://localhost:5000/api/send-email', formData);
+
+          alert('Message sent successfully!');
+
+          setFormData({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+          });
+        } 
+        catch (error) {
+
+          console.error('Error sending message:', error);
+          alert('An error occurred while sending the message. Please try again later.');
+          
+        }
       }
     return(
      <>
