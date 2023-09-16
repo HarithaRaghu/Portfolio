@@ -1,12 +1,14 @@
 "use strict";
 
 exports.handler = function _callee(event) {
+  var data;
   return regeneratorRuntime.async(function _callee$(_context) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
           _context.prev = 0;
           console.log('Function invoked');
+          data = JSON.parse(event.body);
           return _context.abrupt("return", {
             statusCode: 200,
             body: JSON.stringify({
@@ -14,10 +16,9 @@ exports.handler = function _callee(event) {
             })
           });
 
-        case 5:
-          _context.prev = 5;
+        case 6:
+          _context.prev = 6;
           _context.t0 = _context["catch"](0);
-          console.error('Error:', _context.t0);
           return _context.abrupt("return", {
             statusCode: 500,
             body: JSON.stringify({
@@ -30,5 +31,5 @@ exports.handler = function _callee(event) {
           return _context.stop();
       }
     }
-  }, null, null, [[0, 5]]);
+  }, null, null, [[0, 6]]);
 };

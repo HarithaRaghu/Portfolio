@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <>
       <div id='contact' className="contact-content">
-        <form className="form-content" onSubmit={handleSubmit}>
+        <form className="form-content" onSubmit={handleSubmit} netlify >
           <h2>CONTACT ME</h2>
           <div className="form-item">
             <label htmlFor="name">NAME:</label><br />
