@@ -18,34 +18,36 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+  }
 
-    try {
-      const response = await fetch('/.netlify/functions/submitForm', {
-        method: 'POST',
-        body: JSON.stringify(formData),
-      });
+  //   try {
+  //     const response = await fetch('/.netlify/functions/submitForm', {
+  //       method: 'POST',
+  //       body: JSON.stringify(formData),
+  //     });
 
-      if (response.ok) {
-        alert('Message sent successfully!');
-        setFormData({
-          name: '',
-          email: '',
-          message: '',
-        });
-      } else {
-        console.error('Error sending message:', response.statusText);
-        alert('An error occurred while sending the message. Please try again later.');
-      }
-    } catch (error) {
-      console.error('Error sending message:', error);
-      alert('An error occurred while sending the message. Please try again later.');
-    }
-  };
+  //     if (response.ok) {
+  //       alert('Message sent successfully!');
+  //       setFormData({
+  //         name: '',
+  //         email: '',
+  //         message: '',
+  //       });
+  //     } else {
+  //       console.error('Error sending message:', response.statusText);
+  //       alert('An error occurred while sending the message. Please try again later.');
+  //     }
+  //   } catch (error) {
+  //     console.error('Error sending message:', error);
+  //     alert('An error occurred while sending the message. Please try again later.');
+  //   }
+  // };
 
   return (
     <>
-      <div id='contact' className="contact-content">
-        <form className="form-content" onSubmit={handleSubmit} netlify >
+      <div id='contact' className="contact-content" >
+        <form className="form-content" onSubmit={handleSubmit} method="post" data-netlify="true">
           <h2>CONTACT ME</h2>
           <div className="form-item">
             <label htmlFor="name">NAME:</label><br />
