@@ -67,14 +67,17 @@
 }
 @media(max-width:768px){
     .text-zone{
-        padding: 60px;
+        
+        padding: 120px 80px;
         flex-direction: column;
         h1{
             font-size: 40px;
             margin-left: 0;
             padding: 10px;
 
-           
+            button{
+                margin-left: 35px;
+            }
             
         }
     // .sparkle-1{

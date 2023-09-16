@@ -1,4 +1,5 @@
 import './index.scss'
+import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 import htmlLogo from "../../assets/images/Home/html.png"
 import cssLogo from "../../assets/images/Home/CSS.png"
@@ -46,15 +47,18 @@ const Home=()=>{
             <br/>
             <p><br/>Front End Developer who writes clean, elegant and efficient code</p>
            
-            <a href="/contact">
+    
               <motion.button
                 variants={buttonVariants}
                 scale='scale'
                 transition='transition' 
-               >Contact Me
+               >
+                <Link to="contact" smooth={true} duration={10} >
+                  Contact Me
+                </Link>
                </motion.button>
                
-               </a>
+               
           </motion.h1>
             <div className='techstack-img'>
             <img className='html' alt='htmllogo' src={htmlLogo}></img>

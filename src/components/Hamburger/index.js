@@ -15,7 +15,10 @@ export default function Hamburger() {
   const handleDownload=()=>{
     window.open(Resume,'_blank');
   }
- 
+  const closeNavbar = () => {
+    setShowNavExternal3(false);
+  };
+   
 
   return (
     <>
@@ -39,26 +42,26 @@ export default function Hamburger() {
         <div className='bg-light shadow-3 p-4'>
           
           <MDBBtn block className='border-bottom m-0'  color='white' >
-          <Link to='home' smooth={true} duration={50}>
+          <Link to='home' smooth={true} duration={50} onClick={closeNavbar}>
                Home
             </Link>
           </MDBBtn>
           
           <MDBBtn block className='border-bottom m-0' color='white'  >
-          <Link to="about"  smooth={true} duration={50}>
+          <Link to="about"  smooth={true} duration={50} onClick={closeNavbar}>
                About
             </Link>
           </MDBBtn>
           <MDBBtn block className='border-bottom m-0' color='white' href='/projects'>
-          <Link to="projects"  smooth={true} duration={50}>
+          <Link to="projects"  smooth={true} duration={50} onClick={closeNavbar}>
                Projects
             </Link>
           </MDBBtn>
           <MDBBtn block className='border-bottom m-0' color='white' href='/Resume' onClick={handleDownload}>
             Resume
           </MDBBtn>
-          <MDBBtn block className='border-bottom m-0' color='white' href='/contact'>
-          <Link to="contact" smooth={true} duration={50}>
+          <MDBBtn block className='border-bottom m-0' color='white' href='/contact' >
+          <Link to="contact" smooth={true} duration={50} onClick={closeNavbar}>
                Contact
             </Link>
           </MDBBtn>

@@ -1,0 +1,55 @@
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../../assets/images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  color: #ece2e2;
+  font-family: Segoe UI, Roboto, Helvetica Neue, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+.contact-content .form-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 400px;
+  background-color: rgba(72, 70, 70, 0.6);
+  padding: 40px;
+}
+.contact-content .form-content h2 {
+  padding: 20px;
+}
+.contact-content .form-content button {
+  border: 2px;
+  border-radius: 7px;
+  padding: 5px 83px;
+  color: #ece2e2;
+  font-size: bold;
+  background-color: #d3552f;
+}
+.contact-content .form-content .form-item {
+  padding: 10px;
+  font-size: 16px;
+}
+.contact-content .form-content .form-item input, .contact-content .form-content .form-item textarea {
+  border-bottom: 2px solid #d3552f;
+  background-color: #665e5e;
+  width: 200px;
+  font-size: 17px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    padding: 100px 20px;
+  }
+  .contact-content .form-content {
+    padding: 15px;
+  }
+  .contact-content .form-content h2 {
+    padding: 5px;
+  }
+}
