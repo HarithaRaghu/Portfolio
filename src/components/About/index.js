@@ -3,12 +3,11 @@ import Profilepic from '../../assets/images/Haritha.jpg'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-
 const About = () => {
   return (
     <>
 
-      <div id='about'className="about-container" >
+      <div id='about'  className="about-container" >
         <div className='heading'>
           <h1>ABOUT ME</h1>
         </div>
@@ -18,15 +17,12 @@ const About = () => {
 
 
           <p>
-           
-            I am a highly skilled solution-focused Web developer with two years 
-            of experience in IT industry. Committed to writing clean Efficient 
-            and maintainable code. Sound knowledge in Data structures and Algorithms.
-            Strong technical, analytical and interpersonal skills and a strong interest in exploring new technologies and their applications.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.
+          Hello, I'm Haritha, a web developer with over 2 years of experience.
+          I'm passionate about creating websites and love learning new things to enhance them. 
+          I enjoy the challenge of adding new features and making web experiences better. 
+          I am currently working at Wipro Technologies as Software Engineer L2. As a web developer, 
+          what truly ignites my passion is the vast array of technologies and their pivotal role in the digital landscape. 
+          This ever-evolving tech landscape keeps me deeply engaged and fuels my enthusiasm for the work I do.
           </p>
           <div className="icons">
                <a 

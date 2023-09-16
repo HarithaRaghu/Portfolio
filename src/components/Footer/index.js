@@ -3,7 +3,6 @@ import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-
 const Footer=()=>{
    return(
        <>
@@ -45,7 +44,9 @@ const Footer=()=>{
                   />
                </a>
             </div>
+            
             </div>
+            
             </>
    )
 }

@@ -1,15 +1,17 @@
-$navbar-bg:  rgb(175, 170, 170);
+$navbar-bg: rgb(175, 170, 170);
 $navbar-text-color: #ffff;
 
-
-.navbar {
+.navbar-1 {
     background-color: $navbar-bg;
-    padding: 1rem;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 
     div {
-        .logo{
+        .logo {
             padding-left: 80px;
             font-family: "La Belle Aurore";
             text-decoration: none;
@@ -23,35 +25,39 @@ $navbar-text-color: #ffff;
         list-style: none;
         display: flex;
         padding: 10px;
-        margin:0px 80px;
+        margin: 0px 80px;
+
         li {
             margin: 0 1rem;
             display: flex;
             align-items: center;
-            font-family: 'Roboto',sans-serif;
+            font-family: 'Roboto', sans-serif;
             font-weight: bold;
-            .nav-link{
+
+            .nav-link {
                 cursor: pointer;
             }
-            button{
+
+            button {
                 padding: 6px;
                 text-align: center;
                 color: $navbar-text-color;
-                font-family: 'Roboto',sans-serif;
+                font-family: 'Roboto', sans-serif;
                 font-weight: bold;
-                font-size: 17px;
+                font-size: 15px;
                 border: 1px solid #666360;
                 background-color: rgb(175, 170, 170);
                 border-radius: 4px;
                 transition: color 0.7s ease;
+
                 &:hover {
-                   color: #272625;
+                    color: #272625;
                 }
             }
 
             a {
-                
-                font-size: 17px;
+
+                font-size: 15px;
                 text-decoration: none;
                 color: $navbar-text-color;
                 transition: color 0.3s;
@@ -59,7 +65,20 @@ $navbar-text-color: #ffff;
                 &:hover {
                     color: #272625;
                 }
-                
+                &.active {
+                    color: #272625;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 75%;
+                        height: 3px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #272625; 
+                    }
+                }
             }
         }
 
@@ -78,14 +97,25 @@ $navbar-text-color: #ffff;
         }
     }
 
-    
+
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    .navbar-1 {
+       
+        div{
+
+          .logo{
+            padding-left: 10px;
+            
+         }
+    }
         .nav-links {
             display: none;
         }
-
+        
     }
 }
+
+
+

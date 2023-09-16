@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './index.scss'
+import { Link } from 'react-scroll';
+import Resume from '../../assets/Resume/Haritha_Raghu_Resume.pdf'
 import {
   MDBContainer,
   MDBCollapse,
@@ -11,10 +12,14 @@ import {
 
 export default function Hamburger() {
   const [showNavExternal3, setShowNavExternal3] = useState(false);
+  const handleDownload=()=>{
+    window.open(Resume,'_blank');
+  }
+ 
 
   return (
     <>
-      <MDBNavbar>
+      <MDBNavbar  >
         <MDBContainer fluid>
           <MDBNavbarToggler
             className='ms-auto'
@@ -33,21 +38,29 @@ export default function Hamburger() {
       <MDBCollapse show={showNavExternal3}>
         <div className='bg-light shadow-3 p-4'>
           
-          <MDBBtn block className='border-bottom m-0'  color='white' href="/">
-            Home
+          <MDBBtn block className='border-bottom m-0'  color='white' >
+          <Link to='home' smooth={true} duration={50}>
+               Home
+            </Link>
           </MDBBtn>
           
-          <MDBBtn block className='border-bottom m-0' color='white' href='/about'>
-            About
+          <MDBBtn block className='border-bottom m-0' color='white'  >
+          <Link to="about"  smooth={true} duration={50}>
+               About
+            </Link>
           </MDBBtn>
           <MDBBtn block className='border-bottom m-0' color='white' href='/projects'>
-            Projects
+          <Link to="projects"  smooth={true} duration={50}>
+               Projects
+            </Link>
           </MDBBtn>
-          <MDBBtn block className='border-bottom m-0' color='white' href='/Resume'>
+          <MDBBtn block className='border-bottom m-0' color='white' href='/Resume' onClick={handleDownload}>
             Resume
           </MDBBtn>
           <MDBBtn block className='border-bottom m-0' color='white' href='/contact'>
-            Contact
+          <Link to="contact" smooth={true} duration={50}>
+               Contact
+            </Link>
           </MDBBtn>
         </div>
       </MDBCollapse>

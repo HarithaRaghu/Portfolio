@@ -1,5 +1,5 @@
 .text-zone{
-    padding: 120px;
+    padding: 140px;
     background-color: rgb(24, 24, 54);
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@
 }
 @media(max-width:768px){
     .text-zone{
-        padding: 40px;
+        padding: 60px;
         flex-direction: column;
         h1{
             font-size: 40px;
@@ -77,9 +77,9 @@
            
             
         }
-    .sparkle-1{
-        display: none;
-    }
+    // .sparkle-1{
+    //     display: none;
+    // }
         .techstack-img{
             display: flex;
             justify-content: center;

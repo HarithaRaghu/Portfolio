@@ -1,7 +1,6 @@
 import './index.scss'
 import ReactTyped from "react-typed";
 import { motion } from 'framer-motion';
-import Sparkle from '../Sparkle';
 import htmlLogo from "../../assets/images/Home/html.png"
 import cssLogo from "../../assets/images/Home/CSS.png"
 import jsLogo from "../../assets/images/Home/JavaScript.png"
@@ -35,6 +34,7 @@ const Home=()=>{
         <div className='text-zone'>
            
           <motion.h1 
+             id='home'
             variants={aboutVariants}
             initial="initial"
             animate="animate"
@@ -57,11 +57,6 @@ const Home=()=>{
                
                </a>
           </motion.h1>
-          <div className='sparkle-1'>
-            <Sparkle style={{ top: '200px', left: '200px' }} />
-            <Sparkle style={{ top: '400px', left: '400px' }} />
-            <Sparkle style={{ top: '400px', left: '50px' }} />
-            </div>
             <div className='techstack-img'>
             <img className='html' alt='htmllogo' src={htmlLogo}></img>
             <img className='css' alt='csslogo' src={cssLogo}></img>
