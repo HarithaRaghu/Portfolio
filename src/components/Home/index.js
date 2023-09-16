@@ -1,5 +1,4 @@
 import './index.scss'
-import ReactTyped from "react-typed";
 import { motion } from 'framer-motion';
 import htmlLogo from "../../assets/images/Home/html.png"
 import cssLogo from "../../assets/images/Home/CSS.png"
@@ -45,7 +44,7 @@ const Home=()=>{
             <br/>
             Web Developer
             <br/>
-            <p><br/><ReactTyped strings={["Front End Developer who writes clean, elegant and efficient code"]} typeSpeed={50} loop /></p>
+            <p><br/>Front End Developer who writes clean, elegant and efficient code</p>
            
             <a href="/contact">
               <motion.button
