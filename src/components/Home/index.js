@@ -4,6 +4,9 @@ import { motion } from 'framer-motion';
 import htmlLogo from "../../assets/images/Home/html.png"
 import cssLogo from "../../assets/images/Home/CSS.png"
 import jsLogo from "../../assets/images/Home/JavaScript.png"
+import About from '../About';
+import Projects from '../Projects';
+import Contact from '../Contact';
 const aboutVariants={
   initial:{ 
            opacity: 0, 
@@ -30,7 +33,7 @@ const buttonVariants={
 
 const Home=()=>{
     return (
-         
+         <>
         <div className='text-zone'>
            
           <motion.h1 
@@ -66,6 +69,10 @@ const Home=()=>{
             <img className='js' alt='jslogo' src={jsLogo}></img>
             </div>
         </div>
+         <About/>
+         <Projects/>
+         <Contact/>
+         </>
       );
     
     
