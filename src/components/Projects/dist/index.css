@@ -22,6 +22,18 @@
   padding: 70px;
   background-color: #a81d1d;
 }
+.projects .project-container .projects-1 a {
+  display: none;
+}
+.projects .project-container .projects-1:hover:first-child {
+  background-color: transparent;
+}
+.projects .project-container .projects-1:hover:first-child h4 {
+  opacity: 0.3;
+}
+.projects .project-container .projects-1:hover:first-child::after a {
+  display: block;
+}
 
 @media (max-width: 768px) {
   .projects {

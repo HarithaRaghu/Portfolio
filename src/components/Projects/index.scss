@@ -20,6 +20,22 @@
         color: #ffff; 
         padding: 70px;
         background-color:  rgb(168, 29, 29);
+        a{
+            display: none;
+        }
+        &:hover:first-child{
+            background-color: transparent;
+            h4{
+                opacity: 0.3;
+            }
+            &::after{
+              a{
+              
+              display: block;
+               }
+                
+            }
+        }
        
     }
 }

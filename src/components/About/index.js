@@ -6,7 +6,6 @@ import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-
 const About = () => {
   return (
     <>
-
       <div id='about'  className="about-container" >
         <div className='heading'>
           <h1>ABOUT ME</h1>
