@@ -4,7 +4,7 @@ import './index.scss'
 import axios from 'axios';
 
 const Contact =()=>{
-
+      
       const [formData,setFormData]=useState(
         {
             name: '',
@@ -52,8 +52,14 @@ const Contact =()=>{
      <>
         <div id='contact' className="contact-content">
             
-            <form className="form-content" onSubmit={handleSubmit}>
+            <form className="form-content" method='POST' 
+                   name='contactform'  onSubmit={handleSubmit}>
             <h2>CONTACT ME</h2>
+            <input 
+             type='hidden'
+             name='form-name'
+             value='form-content' 
+             action='/confirmation-page'/>
                 <div className="form-item">
                  <label htmlFor="name">NAME:</label><br/>
                  <input type='text' id="name" name="name" value={formData.name} onChange={handleChange} required/>
