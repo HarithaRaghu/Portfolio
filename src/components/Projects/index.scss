@@ -1,5 +1,5 @@
-$link-bottom-margin: 10px;
-$link-right-margin: 10px;
+$link-bottom-margin: 20px;
+$link-right-margin: 30px;
 .projects{
     background-color: rgb(188, 58, 58);
     padding: 50px;
@@ -29,9 +29,9 @@ $link-right-margin: 10px;
         position: absolute;
         font-size: 15px;
         color:  #e2dddd;
+        text-decoration: underline;
         bottom: $link-bottom-margin;
         right: $link-right-margin;
-        transition: opacity 0.3s ease;
        }
     }
 }

@@ -1,9 +1,8 @@
 import './index.scss'
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
-import htmlLogo from "../../assets/images/Home/html.png"
-import cssLogo from "../../assets/images/Home/CSS.png"
-import jsLogo from "../../assets/images/Home/JavaScript.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5,faCss3,faJava,faJs,faReact,faGit,faBootstrap} from '@fortawesome/free-brands-svg-icons';
 
 const aboutVariants={
   initial:{ 
@@ -63,10 +62,43 @@ const Home=()=>{
                
                
           </motion.h1>
-            <div className='techstack-img'>
-            <img className='html' alt='htmllogo' src={htmlLogo}></img>
-            <img className='css' alt='csslogo' src={cssLogo}></img>
-            <img className='js' alt='jslogo' src={jsLogo}></img>
+            <div className='techstack-icon'>
+            
+             <FontAwesomeIcon 
+                  icon={faHtml5}
+                  color=" #F06529"
+                  className="anchor-icon"
+                  />
+                  <FontAwesomeIcon 
+                  icon={faCss3}
+                  color="#2965f1"
+                  className="anchor-icon"
+                  />
+                  <FontAwesomeIcon 
+                  icon={faJs}
+                  color=" #F0DB4F"
+                  className="anchor-icon"
+                  />
+                  <FontAwesomeIcon 
+                  icon={faGit}
+                  color="#F1502F"
+                  className="anchor-icon"
+                  /> <br/><br/>
+                  <FontAwesomeIcon 
+                  icon={faJava}
+                  color="#5382A1"
+                  className="anchor-icon"
+                  />
+                  <FontAwesomeIcon 
+                  icon={faReact}
+                  color="#61DBFB"
+                  className="anchor-icon"
+                  />
+                  <FontAwesomeIcon 
+                  icon={faBootstrap}
+                  color="#563d7c"
+                  className="anchor-icon"
+                  />
             </div>
         </div>
       );

@@ -8,7 +8,7 @@
         font-family: 'Helvetica neu';
         font-weight: bolder;
         font-size: 60px;
-        margin-left: 200px;
+        margin-left: 150px;
         padding: 50px;
 
         
@@ -36,27 +36,16 @@
         }
 
     }
-    .techstack-img {
-      
-        .html{
-            width: 100px;
-            height: 100px;
-            top: 100px;
-            margin-right: 20px; 
+    .techstack-icon {
             
+           .anchor-icon{
+              padding: 20px;
+              font-size: 35px; 
+               
+              
+           }
              
-        }
-        .css{
-            width: 100px;
-            height: 100px;
-            top: 50px;
-            
-        }
-        .js{
-            width: 130px;
-            height: 90px;
-            top: 200px;
-        }
+        
     }
       
    
@@ -64,30 +53,32 @@
 @media(max-width:768px){
     .text-zone{
         
-        padding: 120px 80px;
+        padding: 140px 80px;;
         flex-direction: column;
         h1{
             font-size: 40px;
             margin-left: 0;
-            padding: 10px;
+            padding: 25px;
 
             .contact-button{
                 margin-left: 35px;
             }
             
         }
-        .techstack-img{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
+        .techstack-icon{
+          display: flex;
+          flex-wrap: wrap; 
+          justify-content: center;
+          align-items: center;
+          max-width: 400px;
+               .anchor-icon{
+                margin-top: 20px;
+                padding: 10px;
+                font-size: 25px; 
+      
+               }
         
-        .html,.css,.js{
-                 width: 80px;
-                 height: 80px;
-                 top: 0;
-                 margin: 5px;
-        }
+        
     }
     }
 }
