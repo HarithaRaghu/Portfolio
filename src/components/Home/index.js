@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import htmlLogo from "../../assets/images/Home/html.png"
 import cssLogo from "../../assets/images/Home/CSS.png"
 import jsLogo from "../../assets/images/Home/JavaScript.png"
+import Resume from '../../assets/Resume/Haritha_Raghu_Resume.pdf'
 const aboutVariants={
   initial:{ 
            opacity: 0, 
@@ -29,6 +30,9 @@ const buttonVariants={
 
 
 const Home=()=>{
+  const handleDownload=()=>{
+    window.open(Resume,'_blank');
+  }
     return (
          
         <div className='text-zone'>
@@ -46,7 +50,8 @@ const Home=()=>{
             Web Developer
             <br/>
             <p><br/>Front End Developer who writes clean, elegant and efficient code</p>
-           
+               
+               <button className='Resume'onClick={handleDownload}>Download Resume</button>
     
               <motion.button
                 variants={buttonVariants}

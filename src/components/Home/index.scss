@@ -8,7 +8,7 @@
         font-family: 'Helvetica neu';
         font-weight: bolder;
         font-size: 60px;
-        margin-left: 300px;
+        margin-left: 200px;
         padding: 50px;
 
         
@@ -19,6 +19,20 @@
             }
         p{
             font-size: 16px;
+        }
+        .Resume{
+            margin-left: 0px;
+            padding: 15px;
+            font-size: 12px;
+            border: 1px solid rgb(205, 62, 62);
+            background-color: orangered;
+            color: white;
+            border-radius:  40px;
+            transition: 0.3s ease;
+            &:hover{
+                background-color:  rgb(205, 62, 62);
+                color: rgb(232, 159, 43);;
+            }
         }
         button{
             margin-left: 100px;

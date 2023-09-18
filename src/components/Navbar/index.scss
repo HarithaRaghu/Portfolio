@@ -39,13 +39,13 @@ $navbar-text-color: #ffff;
             }
 
             button {
-                padding: 6px;
+                // padding: 6px;
                 text-align: center;
                 color: $navbar-text-color;
                 font-family: 'Roboto', sans-serif;
                 font-weight: bold;
                 font-size: 15px;
-                border: 1px solid #666360;
+                border: transparent;
                 background-color: rgb(175, 170, 170);
                 border-radius: 4px;
                 transition: color 0.7s ease;

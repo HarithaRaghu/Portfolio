@@ -1,4 +1,5 @@
-
+$link-bottom-margin: 10px;
+$link-right-margin: 10px;
 .projects{
     background-color: rgb(188, 58, 58);
     padding: 50px;
@@ -15,28 +16,33 @@
     padding: 100px 100px 250px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     .projects-1{
+        position: relative;
         border: 1px solid rgb(99, 13, 13);
         box-shadow: 0 10px 20px rgb(0,0,0,1);
-        color: #ffff; 
         padding: 70px;
         background-color:  rgb(168, 29, 29);
-        a{
-            display: none;
-        }
-        &:hover:first-child{
-            background-color: transparent;
+             h4{
+                color: #ffff; 
+                transition: color 0.3s ease;
+             }
+       .project-link{
+        position: absolute;
+        color:  #181818;
+        text-decoration: underline;
+        bottom: $link-bottom-margin;
+        right: $link-right-margin;
+        opacity: 0; 
+        transition: opacity 0.3s ease;
+       }
+       &:hover{
             h4{
-                opacity: 0.3;
+                color:  rgb(188, 58, 58);     
             }
-            &::after{
-              a{
-              
-              display: block;
-               }
-                
-            }
+        .project-link{
+            color: #181818;
+            opacity: 1;
         }
-       
+       }
     }
 }
 }
