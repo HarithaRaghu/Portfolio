@@ -15,16 +15,16 @@ const Projects=()=>{
             <div className='project-container' >
           <div className='projects-1'>
               <h4>Blockchain-Based Government Project Fund Tracking and Management System</h4>
-                <a href="https://link.springer.com/chapter/10.1007/978-981-16-0878-0_38"className='project-link' >Learn more</a>
+                <a href="https://link.springer.com/chapter/10.1007/978-981-16-0878-0_38" target='_blank' rel="noreferrer" className='project-link' >Learn more</a>
           </div>
 
           <div className='projects-1'>
                <h4>Responsive Ecommerce Website Using HTML, CSS & JavaScript</h4>
-               <a href="https://github.com/HarithaRaghu?tab=repositories" className='project-link'>Learn more</a>
+               <a href="https://github.com/HarithaRaghu?tab=repositories" target='_blank' rel="noreferrer" className='project-link'>Learn more</a>
           </div>
           <div className='projects-1'>
               <h4>Expense Tracker Web Application Using React Js  </h4>
-              <a href="https://github.com/HarithaRaghu?tab=repositories" className='project-link'>Learn more</a>
+              <a href="https://github.com/HarithaRaghu?tab=repositories" target='_blank' rel="noreferrer" className='project-link'>Learn more</a>
           </div>
           </div>
         </div>

@@ -20,21 +20,7 @@
         p{
             font-size: 16px;
         }
-        .Resume{
-            margin-left: 0px;
-            padding: 15px;
-            font-size: 12px;
-            border: 1px solid rgb(205, 62, 62);
-            background-color: orangered;
-            color: white;
-            border-radius:  40px;
-            transition: 0.3s ease;
-            &:hover{
-                background-color:  rgb(205, 62, 62);
-                color: rgb(232, 159, 43);;
-            }
-        }
-        button{
+        .contact-button{
             margin-left: 100px;
             font-size: 10px;
             font-weight: bold;
@@ -51,10 +37,6 @@
 
     }
     .techstack-img {
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
-        // position: relative;
       
         .html{
             width: 100px;
@@ -89,14 +71,11 @@
             margin-left: 0;
             padding: 10px;
 
-            button{
+            .contact-button{
                 margin-left: 35px;
             }
             
         }
-    // .sparkle-1{
-    //     display: none;
-    // }
         .techstack-img{
             display: flex;
             justify-content: center;

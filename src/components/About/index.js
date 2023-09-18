@@ -3,7 +3,14 @@ import Profilepic from '../../assets/images/Haritha.jpg'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import Resume from '../../assets/Resume/Haritha_Raghu_Resume.pdf'
+
 const About = () => {
+
+  const handleDownload=()=>{
+    window.open(Resume,'_blank');
+  }
+
   return (
     <>
       <div id='about'  className="about-container" >
@@ -60,8 +67,24 @@ const About = () => {
                </a>
             </div>
         </div>
-
+        <div className='skills-section'>
+          <h1>SKILLS</h1>
+           <div className='skill-content'>
+            <h4>HTML5</h4>
+            <h4>CSS3</h4>
+            <h4>Sass</h4>
+            <h4>JavaScript</h4>
+            <h4>React JS</h4>
+            <h4>Java</h4>
+            <h4>Bootstrap</h4>
+            <h4>GIT</h4>
+            <h4>MERN</h4>
+            <h4>SQL</h4>
+           </div>
+            <div className='download-resume'><button className='resume-button' onClick={handleDownload} >Download Resume</button></div>
       </div>
+      </div>
+     
 
     </>
 

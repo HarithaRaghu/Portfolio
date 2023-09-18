@@ -27,21 +27,11 @@ $link-right-margin: 10px;
              }
        .project-link{
         position: absolute;
-        color:  #181818;
-        text-decoration: underline;
+        font-size: 15px;
+        color:  #e2dddd;
         bottom: $link-bottom-margin;
         right: $link-right-margin;
-        opacity: 0; 
         transition: opacity 0.3s ease;
-       }
-       &:hover{
-            h4{
-                color:  rgb(188, 58, 58);     
-            }
-        .project-link{
-            color: #181818;
-            opacity: 1;
-        }
        }
     }
 }

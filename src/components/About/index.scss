@@ -52,7 +52,50 @@
         
        }
     }
-  
+    .skills-section{
+      h1{
+        color:  rgb(175, 170, 170);
+        margin-left: 27px;
+        padding-top: 50px;
+        padding-bottom: 30px; 
+      }
+      .skill-content{
+        margin-left: 40px;
+        border-left: 3px solid rgb(213, 38, 38);
+        border-radius: 20px;
+        padding: 20px;
+          h4{
+            color:  #bfb0b0;
+              
+            &::before{
+              content: "";
+              display: inline-block;
+              width: 100px;
+              color: rgb(188, 58, 58);
+              margin-right: 15px;
+              border-radius: 1px; 
+              border:1px solid
+            }
+          }
+         
+      }
+      .download-resume{
+        margin-left: 80px;
+        margin-top: 50px;
+        .resume-button{
+          background-color: rgb(188, 58, 58);
+          color: #edebeb;
+          padding: 8px;
+          font-size: 15px;
+          border-radius: 5px;
+            
+          &:hover{
+            background-color: rgb(213, 38, 38);
+            color:  #bfb0b0;
+          }
+        }
+      }
+    }
    
   }
 
