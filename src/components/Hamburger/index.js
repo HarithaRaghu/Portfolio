@@ -57,7 +57,7 @@ export default function Hamburger() {
                Projects
             </Link>
           </MDBBtn>
-          <MDBBtn block className='border-bottom m-0' color='white' href='/Resume' onClick={handleDownload}>
+          <MDBBtn block className='border-bottom m-0'  color='white' onClick={handleDownload}>
             Resume
           </MDBBtn>
           <MDBBtn block className='border-bottom m-0' color='white' href='/contact' >

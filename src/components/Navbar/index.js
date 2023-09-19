@@ -4,11 +4,12 @@ import Hamburger from "../Hamburger";
 import { Link } from 'react-scroll';
 import Resume from '../../assets/Resume/Haritha_Raghu_Resume.pdf'
 
-
 const Navbar=()=>{
         const [activeLink, setActiveLink] = useState('home');
           const handleDownload=()=>{
+
             window.open(Resume,'_blank');
+            
           }
         
     return(
@@ -48,7 +49,14 @@ const Navbar=()=>{
             </Link>
               
             </li>
-            <li><button href="/Resume" onClick={handleDownload}>Resume</button></li>
+            <li>
+              <Link 
+              className={`nav-link ${activeLink === 'resume' ? 'active' : ''}`}
+              onClick={() => setActiveLink('resume')}
+              ><button 
+               onClick={handleDownload}>Resume</button>
+            </Link></li>
+            
             <li>
               <Link 
                 to="contact" 
