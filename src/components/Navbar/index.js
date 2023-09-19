@@ -50,12 +50,9 @@ const Navbar=()=>{
               
             </li>
             <li>
-              <Link 
-              className={`nav-link ${activeLink === 'resume' ? 'active' : ''}`}
-              onClick={() => setActiveLink('resume')}
-              ><button 
+              <button 
                onClick={handleDownload}>Resume</button>
-            </Link></li>
+              </li>
             
             <li>
               <Link 
