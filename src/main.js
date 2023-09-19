@@ -7,15 +7,16 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer'
 import BackToTopButton from './components/BackToTopButton';
-import { initialize, pageview } from 'react-ga';
+import ReactGA from 'react-ga';  
 
 
 
 const Main= ()=> {
- initialize('G-ZLXS53V921');
- React.useEffect(() => {
-  pageview(window.location.pathname + window.location.search);
-}, []);
+ReactGA.initialize('G-ZLXS53V921');
+ReactGA.event({
+  category: 'User Interaction',
+  action: 'Clicked Button',
+});
   return (
    
       <div>
@@ -33,5 +34,6 @@ const Main= ()=> {
       
   );
 }
+
 
 export default Main;
