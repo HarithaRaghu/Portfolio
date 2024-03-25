@@ -3,7 +3,7 @@ import Profilepic from '../../assets/images/Haritha.jpg'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import Resume from '../../assets/Resume/Haritha_Raghu_Resume.pdf'
+import Resume from '../../assets/Resume/Haritha_Resume.pdf'
 
 const About = () => {
 

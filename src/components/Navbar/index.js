@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "./index.scss"
 import Hamburger from "../Hamburger";
 import { Link } from 'react-scroll';
-import Resume from '../../assets/Resume/Haritha_Raghu_Resume.pdf'
+import Resume from '../../assets/Resume/Haritha_Resume.pdf'
 
 const Navbar=()=>{
         const [activeLink, setActiveLink] = useState('home');

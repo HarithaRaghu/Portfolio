@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import Resume from '../../assets/Resume/Haritha_Raghu_Resume.pdf'
+import Resume from '../../assets/Resume/Haritha_Resume.pdf'
 import {
   MDBContainer,
   MDBCollapse,
